@@ -1,0 +1,77 @@
+[
+  {
+    "model": "devotionals.devotional",
+    "pk": 1,
+    "fields": {
+      "title": "God’s Unfailing Love",
+      "content": "No matter how far we drift, God’s love remains constant and unchanging. His love is not based on our performance but on His nature. Reflect today on moments this past week when you felt abandoned or anxious, and remember that God was present. Take time to journal about a specific situation in which you felt God’s guidance, even when circumstances seemed hopeless. Then, pray to thank Him for His steadfastness.\n\nConsider sharing this experience with a friend or mentor to encourage them that God's love is always reliable. Finally, spend a few minutes meditating on the promise from Romans 8:38-39, affirming that nothing can separate you from the love of God.",
+      "author": 1,
+      "tags": "love,grace,faith",
+      "date": "2025-08-27",
+      "is_approved": true,
+      "is_featured": true,
+      "created_at": "2025-08-27T08:00:00Z",
+      "updated_at": "2025-08-27T08:00:00Z"
+    }
+  },
+  {
+    "model": "devotionals.devotional",
+    "pk": 2,
+    "fields": {
+      "title": "Peace in the Storm",
+      "content": "When the winds of life howl and anxiety threatens to overwhelm, Jesus offers a peace that transcends understanding. Imagine your life as a stormy sea; His presence is the anchor that holds you steady. Begin by writing down what is troubling you today and consciously hand each worry over to God in prayer. Reflect on Philippians 4:6-7, and repeat the passage aloud, allowing it to settle in your heart.\n\nNext, take one concrete step to relieve stress or tension—perhaps a walk outside, journaling, or listening to calming music—while focusing on God’s presence with you. Remember, even in chaos, He can bring clarity and serenity.",
+      "author": 1,
+      "tags": "peace,trust",
+      "date": "2025-08-26",
+      "is_approved": true,
+      "is_featured": false,
+      "created_at": "2025-08-26T07:30:00Z",
+      "updated_at": "2025-08-26T07:30:00Z"
+    }
+  },
+  {
+    "model": "devotionals.devotional",
+    "pk": 3,
+    "fields": {
+      "title": "Strength in Weakness",
+      "content": "Our weaknesses are windows for God's power to show through. When you feel inadequate, bring that place honestly to God and ask for His strength. Reflect on 2 Corinthians 12:9, where Paul shares that God's grace is sufficient, and His power is perfected in weakness. Spend time writing a short letter to God expressing your honest feelings about your limitations and fears.\n\nThen, consider one area in your life where you are trying to rely on your own strength and commit to surrendering that to God this week. Watch for moments where His power is evident, even in small victories or subtle changes in attitude.",
+      "author": 1,
+      "tags": "strength,humility",
+      "date": "2025-08-25",
+      "is_approved": true,
+      "is_featured": false,
+      "created_at": "2025-08-25T06:45:00Z",
+      "updated_at": "2025-08-25T06:45:00Z"
+    }
+  },
+  {
+    "model": "devotionals.devotional",
+    "pk": 4,
+    "fields": {
+      "title": "Walking by Faith",
+      "content": "Faith is not passive; it looks forward, stepping into uncertainty because God is faithful. Take a moment today to identify one area of your life where you feel stuck or uncertain. Pray specifically for guidance and courage to take the next step, trusting God’s timing and provision. Read Hebrews 11:1 and meditate on what it means to walk by faith, not by sight.\n\nWrite down one small act that demonstrates trust in God this week—perhaps a difficult conversation, a new responsibility, or reaching out to someone for reconciliation. Reflect each day on how God honors each step of obedience, even if results are not immediate.",
+      "author": 1,
+      "tags": "faith,obedience",
+      "date": "2025-08-24",
+      "is_approved": true,
+      "is_featured": false,
+      "created_at": "2025-08-24T09:15:00Z",
+      "updated_at": "2025-08-24T09:15:00Z"
+    }
+  },
+  {
+    "model": "devotionals.devotional",
+    "pk": 5,
+    "fields": {
+      "title": "The Shepherd Who Provides",
+      "content": "The Lord cares for us like a shepherd cares for sheep—feeding, guiding, and protecting. Reflect on specific ways God has provided for you in the past week. Did He answer prayer in unexpected ways? Did He protect you from harm or guide your decisions? Take time to write these down in a gratitude journal. Consider sharing one of these stories with a friend to encourage them.\n\nFinally, read Psalm 23 slowly, and let the imagery sink in: green pastures, still waters, paths of righteousness. Ask God to give you a sense of peace and security as you navigate your own 'fields and valleys.'",
+      "author": 1,
+      "tags": "provision,psalm",
+      "date": "2025-08-23",
+      "is_approved": true,
+      "is_featured": false,
+      "created_at": "2025-08-23T08:00:00Z",
+      "updated_at": "2025-08-23T08:00:00Z"
+    }
+  }
+]

@@ -42,9 +42,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_spectacular',
     'rest_framework_simplejwt',
+    'django_filters',
 
-    'users',
-
+    'devotionals',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -152,4 +153,10 @@ SPECTACULAR_SETTINGS = {
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
 }
+
+
+REST_FRAMEWORK.update({
+    "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"],
+})
+
 
