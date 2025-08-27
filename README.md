@@ -37,9 +37,9 @@ It allows users to browse, search, submit, and bookmark devotionals, with option
 
 ---
 
-## API Endpoints (Users App)
+## API Endpoints
 
-### Authentication
+### Users App (Authentication)
 
 | Endpoint                   | Method | Description                                                         |
 | -------------------------- | ------ | ------------------------------------------------------------------- |
@@ -48,7 +48,17 @@ It allows users to browse, search, submit, and bookmark devotionals, with option
 | `/api/auth/token/refresh/` | POST   | Refresh JWT access token.                                           |
 | `/api/auth/profile/`       | GET    | Retrieve authenticated user profile.                                |
 
-*(Other app endpoints will be added as development continues.)*
+### Devotionals App
+
+| Endpoint                         | Method | Description                                         |
+| -------------------------------- | ------ | --------------------------------------------------- |
+| `/api/devotionals/`              | GET    | List all devotionals.                               |
+| `/api/devotionals/`              | POST   | Create a new devotional (authenticated users only). |
+| `/api/devotionals/<id>/`         | GET    | Retrieve a devotional by ID.                        |
+| `/api/devotionals/<id>/`         | PUT    | Update a devotional (admin or owner).               |
+| `/api/devotionals/<id>/`         | DELETE | Delete a devotional (admin or owner).               |
+| `/api/devotionals/today/`        | GET    | Get the devotional for today.                       |
+| `/api/devotionals/<id>/approve/` | POST   | Approve a devotional (admin only).                  |
 
 ---
 
@@ -98,4 +108,3 @@ python manage.py runserver
 http://127.0.0.1:8000/swagger/
 ```
 
----
