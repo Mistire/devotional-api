@@ -1,6 +1,3 @@
-Got it! Here’s the **fully updated README** with the Verses app included and the feature about OurManna API integration for daily verses added:
-
----
 
 # Devotional API
 
