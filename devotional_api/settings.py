@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django_filters',
 
     'devotionals',
-    'users'
+    'users',
+    'verses'
 ]
 
 MIDDLEWARE = [

@@ -1,7 +1,11 @@
+Got it! Here’s the **fully updated README** with the Verses app included and the feature about OurManna API integration for daily verses added:
+
+---
+
 # Devotional API
 
 **Devotional API** is a RESTful backend for delivering daily Christian devotionals linked with Bible verses.
-It allows users to browse, search, submit, and bookmark devotionals, with optional integration to external Bible APIs for full scripture text retrieval.
+It allows users to browse, search, submit, and bookmark devotionals, with optional integration to external Bible APIs for full scripture text retrieval, including the OurManna API for the daily verse.
 
 ---
 
@@ -14,15 +18,12 @@ It allows users to browse, search, submit, and bookmark devotionals, with option
 * **Search Devotionals** – Search by keywords or Bible verse references.
 * **Submit Devotionals** – Registered users can submit content, which is moderated before publishing.
 * **Bookmarks/Favorites** – Save devotional content or verses for later reference.
+* **Verse of the Day** – Fetches the daily verse automatically from the OurManna API.
 
 ### User Management
 
 * **Registration & Authentication** – Users can register, login, and access protected endpoints using JWT.
 * **Profile Management** – Users can view their profile information.
-
-### Optional Integration
-
-* **Bible API Integration** – Fetch full scripture text by reference from external Bible APIs.
 
 ---
 
@@ -60,6 +61,19 @@ It allows users to browse, search, submit, and bookmark devotionals, with option
 | `/api/devotionals/today/`        | GET    | Get the devotional for today.                       |
 | `/api/devotionals/<id>/approve/` | POST   | Approve a devotional (admin only).                  |
 
+### Verses App
+
+| Endpoint                   | Method | Description                                  |
+| -------------------------- | ------ | -------------------------------------------- |
+| `/api/verses/`             | GET    | List all cached verses.                      |
+| `/api/verses/`             | POST   | Create a new verse.                          |
+| `/api/verses/{reference}/` | GET    | Retrieve a verse by reference.               |
+| `/api/verses/{reference}/` | PUT    | Update a verse by reference.                 |
+| `/api/verses/{reference}/` | PATCH  | Partially update a verse by reference.       |
+| `/api/verses/{reference}/` | DELETE | Delete a verse by reference.                 |
+| `/api/verses/random/`      | GET    | Get a random cached verse.                   |
+| `/api/verses/today/`       | GET    | Get the verse of the day (via OurManna API). |
+
 ---
 
 ## Setup & Installation
@@ -75,7 +89,7 @@ cd devotional-api
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate  
 ```
 
 3. **Install dependencies:**
