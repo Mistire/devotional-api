@@ -2,7 +2,7 @@
 # Devotional API
 
 **Devotional API** is a RESTful backend for delivering daily Christian devotionals linked with Bible verses.
-It allows users to browse, search, submit, and bookmark devotionals, with optional integration to external Bible APIs for full scripture text retrieval, including the OurManna API for the daily verse.
+It allows users to browse, search, submit, and bookmark devotionals, with optional integration to external Bible APIs for full scripture text retrieval, including the **OurManna API** for the daily verse.
 
 ---
 
@@ -46,6 +46,8 @@ It allows users to browse, search, submit, and bookmark devotionals, with option
 | `/api/auth/token/refresh/` | POST   | Refresh JWT access token.                                           |
 | `/api/auth/profile/`       | GET    | Retrieve authenticated user profile.                                |
 
+---
+
 ### Devotionals App
 
 | Endpoint                         | Method | Description                                         |
@@ -57,6 +59,8 @@ It allows users to browse, search, submit, and bookmark devotionals, with option
 | `/api/devotionals/<id>/`         | DELETE | Delete a devotional (admin or owner).               |
 | `/api/devotionals/today/`        | GET    | Get the devotional for today.                       |
 | `/api/devotionals/<id>/approve/` | POST   | Approve a devotional (admin only).                  |
+
+---
 
 ### Verses App
 
@@ -70,6 +74,19 @@ It allows users to browse, search, submit, and bookmark devotionals, with option
 | `/api/verses/{reference}/` | DELETE | Delete a verse by reference.                 |
 | `/api/verses/random/`      | GET    | Get a random cached verse.                   |
 | `/api/verses/today/`       | GET    | Get the verse of the day (via OurManna API). |
+
+---
+
+### Bookmarks App
+
+| Endpoint               | Method | Description                                    |
+| ---------------------- | ------ | ---------------------------------------------- |
+| `/api/bookmarks/`      | GET    | List all bookmarks for the authenticated user. |
+| `/api/bookmarks/`      | POST   | Create a new bookmark (authenticated users).   |
+| `/api/bookmarks/{id}/` | GET    | Retrieve a bookmark by ID.                     |
+| `/api/bookmarks/{id}/` | PUT    | Update a bookmark (owner only).                |
+| `/api/bookmarks/{id}/` | PATCH  | Partially update a bookmark (owner only).      |
+| `/api/bookmarks/{id}/` | DELETE | Delete a bookmark (owner only).                |
 
 ---
 

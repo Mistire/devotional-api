@@ -46,7 +46,8 @@ INSTALLED_APPS = [
 
     'devotionals',
     'users',
-    'verses'
+    'verses',
+    'bookmarks'
 ]
 
 MIDDLEWARE = [
